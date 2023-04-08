@@ -20,7 +20,9 @@ public class Record implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private Integer age;
     private Instant moment;
+
 
     @ManyToOne
     @JoinColumn(name = "game_id")
