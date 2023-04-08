@@ -27,5 +27,4 @@ public class Record implements Serializable {
     @ManyToOne
     @JoinColumn(name = "game_id")
     private Game game;
-
 }
